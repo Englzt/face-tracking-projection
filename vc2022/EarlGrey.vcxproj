@@ -1,0 +1,151 @@
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{34166E51-DB44-4BA5-B9AA-18CE8DE5E2B3}</ProjectGuid>
+    <RootNamespace>EarlGrey</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\include;..\blocks\body;..\..\Cinder\include;..\..\Cinder\blocks\AX-MediaPlayer\src\msw;..\..\Cinder\blocks\AX-MediaPlayer\src;..\..\Cinder\blocks\OpenCV4\include;..\..\Cinder\blocks\OSC\src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32_WINNT=0x0601;_WINDOWS;NOMINMAX;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\Cinder\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder.lib;opencv_world4100d.lib;OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\Cinder\lib\msw\$(PlatformTarget);..\..\Cinder\lib\msw\$(PlatformTarget)\$(Configuration)\$(PlatformToolset);..\..\Cinder\blocks\OpenCV4\lib\$(Configuration)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <IgnoreSpecificDefaultLibraries>LIBCMT;LIBCPMT</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;..\blocks\body;..\..\Cinder\include;..\..\Cinder\blocks\AX-MediaPlayer\src\msw;..\..\Cinder\blocks\AX-MediaPlayer\src;..\..\Cinder\blocks\OpenCV4\include;..\..\Cinder\blocks\OSC\src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32_WINNT=0x0601;_WINDOWS;NOMINMAX;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\Cinder\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder.lib;opencv_world4100.lib;OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\Cinder\lib\msw\$(PlatformTarget);..\..\Cinder\lib\msw\$(PlatformTarget)\$(Configuration)\$(PlatformToolset);..\..\Cinder\blocks\OpenCV4\lib\$(Configuration)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)assets" "$(OutDir)assets" /E /I /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\blocks\body\LICENSE" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ClCompile Include="..\blocks\body\KinectPlayer.cpp" />
+    <ClCompile Include="..\blocks\body\KinectReciever.cpp" />
+    <ClCompile Include="..\blocks\body\KinectRecorder.cpp" />
+    <ClCompile Include="..\blocks\MatToBase64.cpp" />
+    <ClCompile Include="..\src\DebugView.cpp" />
+    <ClCompile Include="..\src\EarlGreyApp.cpp" />
+    <ClCompile Include="..\..\Cinder\blocks\AX-MediaPlayer\src\msw\AX-MediaPlayerMSWDXGIRenderPath.cxx" />
+    <ClCompile Include="..\..\Cinder\blocks\AX-MediaPlayer\src\msw\AX-MediaPlayerMSWImpl.cxx" />
+    <ClCompile Include="..\..\Cinder\blocks\AX-MediaPlayer\src\msw\AX-MediaPlayerMSWWICRenderPath.cxx" />
+    <ClCompile Include="..\..\Cinder\blocks\AX-MediaPlayer\src\AX-MediaPlayer.cxx" />
+    <ClCompile Include="..\..\Cinder\blocks\OSC\src\cinder\osc\Osc.cpp" />
+    <ClCompile Include="..\src\FacePreview.cpp" />
+    <ClCompile Include="..\src\FaceTracker.cpp" />
+    <ClCompile Include="..\src\ProjectorView.cpp" />
+    <ClCompile Include="..\src\ViewBase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Cinder\blocks\OpenCV4\include\CinderOpenCV.h" />
+    <ClInclude Include="..\blocks\body\Body.hpp" />
+    <ClInclude Include="..\blocks\body\BodyJoint.hpp" />
+    <ClInclude Include="..\blocks\body\jsonHelper.hpp" />
+    <ClInclude Include="..\blocks\body\KinectPlayer.hpp" />
+    <ClInclude Include="..\blocks\body\KinectReciever.hpp" />
+    <ClInclude Include="..\blocks\body\KinectRecorder.hpp" />
+    <ClInclude Include="..\blocks\body\UniqueIDBase.hpp" />
+    <ClInclude Include="..\blocks\MatToBase64.hpp" />
+    <ClInclude Include="..\include\DebugView.hpp" />
+    <ClInclude Include="..\include\FacePreview.hpp" />
+    <ClInclude Include="..\include\FaceTracker.hpp" />
+    <ClInclude Include="..\include\ProjectorView.hpp" />
+    <ClInclude Include="..\include\Resources.h" />
+    <ClInclude Include="..\..\Cinder\blocks\AX-MediaPlayer\src\msw\AX-MediaPlayerMSWDXGIRenderPath.h" />
+    <ClInclude Include="..\..\Cinder\blocks\AX-MediaPlayer\src\msw\AX-MediaPlayerMSWImpl.h" />
+    <ClInclude Include="..\..\Cinder\blocks\AX-MediaPlayer\src\msw\AX-MediaPlayerMSWWICRenderPath.h" />
+    <ClInclude Include="..\..\Cinder\blocks\AX-MediaPlayer\src\AX-MediaPlayer.h" />
+    <ClInclude Include="..\..\Cinder\blocks\OSC\src\cinder\osc\Osc.h" />
+    <ClInclude Include="..\include\ViewBase.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

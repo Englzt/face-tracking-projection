@@ -1,0 +1,171 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Blocks">
+      <UniqueIdentifier>{1F9EE185-6486-4E32-9DE4-9002D0F882C2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\AX-MediaPlayer">
+      <UniqueIdentifier>{8AE3EDEF-0DE0-4281-B198-76310637648A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\AX-MediaPlayer\src">
+      <UniqueIdentifier>{AE990799-E0E2-459E-945F-079DCFC5E0BE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\AX-MediaPlayer\src\msw">
+      <UniqueIdentifier>{F623861D-1AA9-4190-BAEE-5AE5F018B7CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OSC">
+      <UniqueIdentifier>{696AB73E-3EA0-492E-8BED-3F4E097B8B4E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OSC\src">
+      <UniqueIdentifier>{4122701D-049B-4175-A520-10CCE7254AF7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OSC\src\cinder">
+      <UniqueIdentifier>{4D24C5CE-AFC9-4816-ACEE-90F07EF15A19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OSC\src\cinder\osc">
+      <UniqueIdentifier>{FEE83ECE-42BF-4FA2-A92B-1245EAF3FF21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Body">
+      <UniqueIdentifier>{004462d9-4d2f-4c90-b67c-72a967979fea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OpenCV4">
+      <UniqueIdentifier>{5a0ed905-3dbc-4e00-bdb0-303859c419fe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\EarlGreyApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EarlGreyApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Cinder\blocks\AX-MediaPlayer\src\msw\AX-MediaPlayerMSWDXGIRenderPath.cxx">
+      <Filter>Blocks\AX-MediaPlayer\src\msw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Cinder\blocks\AX-MediaPlayer\src\msw\AX-MediaPlayerMSWImpl.cxx">
+      <Filter>Blocks\AX-MediaPlayer\src\msw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Cinder\blocks\AX-MediaPlayer\src\msw\AX-MediaPlayerMSWWICRenderPath.cxx">
+      <Filter>Blocks\AX-MediaPlayer\src\msw</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Cinder\blocks\AX-MediaPlayer\src\msw\AX-MediaPlayerMSWDXGIRenderPath.h">
+      <Filter>Blocks\AX-MediaPlayer\src\msw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Cinder\blocks\AX-MediaPlayer\src\msw\AX-MediaPlayerMSWImpl.h">
+      <Filter>Blocks\AX-MediaPlayer\src\msw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Cinder\blocks\AX-MediaPlayer\src\msw\AX-MediaPlayerMSWWICRenderPath.h">
+      <Filter>Blocks\AX-MediaPlayer\src\msw</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Cinder\blocks\AX-MediaPlayer\src\AX-MediaPlayer.cxx">
+      <Filter>Blocks\AX-MediaPlayer\src</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Cinder\blocks\AX-MediaPlayer\src\AX-MediaPlayer.h">
+      <Filter>Blocks\AX-MediaPlayer\src</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Cinder\blocks\OSC\src\cinder\osc\Osc.cpp">
+      <Filter>Blocks\OSC\src\cinder\osc</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Cinder\blocks\OSC\src\cinder\osc\Osc.h">
+      <Filter>Blocks\OSC\src\cinder\osc</Filter>
+    </ClInclude>
+    <ClCompile Include="..\blocks\body\KinectReciever.cpp">
+      <Filter>Blocks\Body</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DebugView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ProjectorView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ViewBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\MatToBase64.cpp">
+      <Filter>Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\body\KinectRecorder.cpp">
+      <Filter>Blocks\Body</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\body\KinectPlayer.cpp">
+      <Filter>Blocks\Body</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FacePreview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FaceTracker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\body\Body.hpp">
+      <Filter>Blocks\Body</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\body\BodyJoint.hpp">
+      <Filter>Blocks\Body</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\body\jsonHelper.hpp">
+      <Filter>Blocks\Body</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\body\UniqueIDBase.hpp">
+      <Filter>Blocks\Body</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\body\KinectReciever.hpp">
+      <Filter>Blocks\Body</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DebugView.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ProjectorView.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ViewBase.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Cinder\blocks\OpenCV4\include\CinderOpenCV.h">
+      <Filter>Blocks\OpenCV4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\MatToBase64.hpp">
+      <Filter>Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\body\KinectRecorder.hpp">
+      <Filter>Blocks\Body</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\body\KinectPlayer.hpp">
+      <Filter>Blocks\Body</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\FacePreview.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\FaceTracker.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\blocks\body\LICENSE">
+      <Filter>Blocks\Body</Filter>
+    </None>
+  </ItemGroup>
+</Project>
