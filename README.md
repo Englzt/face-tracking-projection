@@ -11,5 +11,8 @@ Ein Computer-Vision-Projekt im Rahmen der Medieninformatik. Das System nutzt ein
 * **Tracking & Logik:** Eigenständige Programmierung der kompletten C++-Logik, der OpenCV-Gesichtserkennung und der Hardware-Anbindung.
 * *Hinweis: Die visuellen Masken und Shader wurden von einer Projektpartnerin entworfen.*
 
+## 📄 Dokumentation
+Eine detaillierte Beschreibung der Architektur, der Funktionsweise und der Hardware-Anbindung liegt dem Repository als PDF-Dokument bei. Aus Datenschutzgründen wurden Gesichter auf den Abbildungen nachträglich geschwärzt.
+
 ## Statische Code-Referenz
 Da dieses Projekt stark an uni-spezifische Hardware (bestimmte Beamer und Kameras) und lokale Ordnerstrukturen gebunden war, stelle ich dieses Projekt primär als Code-Beispiel einer möglichen Implementierung zur Verfügung.
