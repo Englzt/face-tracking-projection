@@ -13,13 +13,3 @@ Ein Computer-Vision-Projekt im Rahmen der Medieninformatik. Das System nutzt ein
 
 ## Statische Code-Referenz
 Da dieses Projekt stark an uni-spezifische Hardware (bestimmte Beamer und Kameras) und lokale Ordnerstrukturen gebunden war, stelle ich dieses Projekt primär als Code-Beispiel einer möglichen Implementierung zur Verfügung.
-
-# EarlGrey
-
-
-
-## Getting started
-
-The project folder needs to be next to the Cinder-folder :)
-
-And you need to copy over the opencvworld.dll from Cinder\blocks\OpenCV4\bin to SoSe25_EarlGrey\vc2022\x64 (for Debug and Release each)
